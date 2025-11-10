@@ -6,15 +6,14 @@ export default function LoginScreen({ navigation }: any ) {
   return (
     <View className="flex-1 flex-shrink-0 justify-center items-center bg-background">
     <Image
-        source={require('../assets/zoonote_logo1-nbg.png')}
+        source={require('../assets/images/zoonote_logo1-nbg.png')}
         style={{ width: 200, height: 200, marginBottom: 10 }}
       />
-      <Text className="text-4xl font-bold pb-20 text-primary uppercase">Logga in</Text>
-      <Text>Välkommen till ZooNote App!</Text> 
+      <Text className="title uppercase">Logga in</Text>
+      <Text className='subtitle pb-5'>Välkommen till ZooNote App</Text> 
       <Button
         title="Logga in"
-        onPress={() => navigation.navigate('Home')}
-      />
+        onPress={() => navigation.navigate('Home')}      />
     </View>
   );
 }

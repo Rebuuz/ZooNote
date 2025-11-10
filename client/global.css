@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    View {
+        @apply bg-background
+    }
+
+    
+}
+
+@layer components {
+    .title {
+        @apply font-quicksand text-5xl text-primary;
+    }
+    
+    .subtitle {
+        @apply font-roboto text-xl font-semibold text-gray-800;
+    }
+}

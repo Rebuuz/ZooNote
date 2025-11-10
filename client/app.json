@@ -20,7 +20,7 @@
     "userInterfaceStyle": "light",
 
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "../assets/images/zoonote_logo1-nbg.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
