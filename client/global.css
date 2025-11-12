@@ -19,4 +19,16 @@
     .subtitle {
         @apply font-roboto text-xl font-semibold text-gray-800;
     }
+
+    .inputForm {
+        @apply border bg-white border-primary rounded-xl p-3 w-64 mb-4;
+    }
+
+    .btn {
+        @apply bg-primary rounded-xl p-3 w-64 items-center font-roboto;
+    }
+
+    .text {
+        @apply font-roboto text-lg text-gray-800;
+    }
 }
