@@ -20,6 +20,10 @@
         @apply font-roboto text-xl font-semibold text-gray-800;
     }
 
+    .mdTitle {
+        @apply font-quicksand text-4xl text-primary;
+    }
+
     .inputForm {
         @apply border bg-white border-primary rounded-xl p-3 w-64 mb-4;
     }

@@ -6,13 +6,12 @@ import { useAuth } from 'lib/AuthContext';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../navigation/RootNavigation';
-import { CommonActions } from '@react-navigation/native';
 
 type LoginScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,'Login'>;
 
 export default function LoginScreen() {
-  const { login, user } = useAuth();
+  const { login } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -22,12 +21,6 @@ export default function LoginScreen() {
     const res = await login(email, password);
     if (res.success) {
       console.log('Inloggad användare:', res);
-      navigation.dispatch(
-      CommonActions.reset({
-      index: 0,
-      routes: [{ name: 'Home' }],
-    })
-    );
     } else {
       setError(res.error || 'Fel vid inloggning');
       console.log('Inloggning misslyckades:', res.error);
