@@ -9,6 +9,8 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+yarn-error.log
+yarn-debug.log
 
 
 
@@ -21,3 +23,9 @@ android
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+#pocketbase data 
+db/pb_data/
+db/*.db
+db/*.db_shm
+db/*.db_wal
