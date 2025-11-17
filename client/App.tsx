@@ -6,6 +6,7 @@ import { useFonts, Roboto_400Regular } from "@expo-google-fonts/roboto";
 import { Quicksand_700Bold } from "@expo-google-fonts/quicksand/700Bold";
 
 import './global.css';
+import { AuthProvider } from 'lib/AuthContext';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,9 +27,9 @@ export default function App() {
   }
 
   return (
-    <>
+    <AuthProvider>
       <StatusBar style="auto" />
       <RootNavigation />
-    </>
+    </AuthProvider>
   );
 }
